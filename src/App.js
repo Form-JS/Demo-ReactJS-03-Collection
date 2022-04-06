@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import StudentTable from './components/student-table/student-table';
+
+// Donnée statique => Import du fichier json
+import students from './data/students.json';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Demo 03 - Collection</h1>
+
+      <StudentTable students={students} />
     </div>
   );
 }
